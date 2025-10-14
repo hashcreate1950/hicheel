@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="select(`chuluu`)">chulu</button>
+    <button onclick="select(`haich`)">haich</button>
+    <button onclick="select(`davuu`)">davuu</button>
+    <p id="my-choose"></p>
+    <p id="pc-choose"></p>
+    <p id="whowin"></p>
+    <script>
+      let result = document.getElementById("my-choose");
+
+      let pc = document.getElementById("pc-choose");
+
+      let defination = document.getElementById("whowin");
+
+      function select(Choose) {
+        const randomNum = Math.floor(Math.random() * 3) + 1;
+        let pcChoose = "";
+
+        if (randomNum === 1) {
+          pcChoose = "chuluu";
+        }
+        if (randomNum === 2) {
+          pcChoose = "haich";
+        }
+        if (randomNum === 3) {
+          pcChoose = "davuu";
+        }
+
+        result.innerHTML = Choose + " --> your chose";
+        pc.innerHTML = pcChoose + "--> pc choose";
+
+        if (pcChoose == "chuluu" && Choose == "haich") {
+          defination.innerHTML = "pc win";
+          return;
+        }
+        if (pcChoose == "haich" && Choose == "davuu") {
+          defination.innerHTML = "pc win";
+
+          return;
+        }
+        if (pcChoose == "davuu" && Choose == "chuluu") {
+          defination.innerHTML = "pc win";
+
+          return;
+        } else {
+          if (pcChoose === Choose) {
+            defination.innerHTML = "tie";
+
+            return;
+          } else {
+            defination.innerHTML = "you win";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

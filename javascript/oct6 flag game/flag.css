@@ -1,0 +1,48 @@
+.header {
+  height: 20rem;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scorecss {
+  font-size: 800%;
+}
+
+button {
+  font-size: 200%;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.sides {
+  height: 80vh;
+  width: 80vw;
+  border-color: black;
+  border-style: solid;
+}
+
+#redside {
+  background-color: red;
+}
+
+#blueside {
+  background-color: blue;
+}
+
+#winner-message {
+  font-size: 3rem;
+  color: darkgreen;
+  text-align: center;
+  margin: 1rem;
+}

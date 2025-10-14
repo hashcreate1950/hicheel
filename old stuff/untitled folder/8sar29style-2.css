@@ -1,0 +1,98 @@
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background: #0062ff;
+  background: linear-gradient(
+    98deg,
+    rgba(0, 98, 255, 1) 0%,
+    rgba(0, 94, 255, 1) 37%,
+    rgba(43, 166, 227, 1) 77%
+  );
+  height: 700px;
+  width: 900px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline;
+  display: flex;
+  padding: 20px;
+}
+h2 {
+  margin-left: 40px;
+}
+.headertext {
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+  margin-left: 200px;
+  justify-content: right;
+  align-items: start;
+}
+button {
+  background-color: rgb(200, 57, 57);
+  color: aliceblue;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+#icon {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 20px;
+}
+
+.containertext {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+input {
+  border-radius: 10px;
+  width: 200px;
+  z-index: 1;
+}
+.containersearch {
+  border-radius: 20px;
+}
+.search {
+  position: absolute;
+  left: 20%;
+}
+p {
+  display: flex;
+  flex-wrap: wrap;
+  display: inline;
+}
+.containerpic {
+  display: flex;
+  align-items: end;
+  max-height: 400px;
+  max-width: 300px;
+  display: inline;
+  float: right;
+  margin-right: 20px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+#sale {
+  background-color: red;
+  border-radius: 20px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  z-index: 2;
+  position: absolute;
+}
